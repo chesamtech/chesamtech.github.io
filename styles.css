@@ -59,3 +59,33 @@
     height: 140px;
   }
 }
+
+/* Mobile hero width correction */
+@media (max-width: 620px) {
+  .site-header,
+  .hero.section-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-copy {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 12vw, 53px);
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+}
